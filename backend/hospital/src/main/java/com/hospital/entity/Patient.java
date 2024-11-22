@@ -40,16 +40,16 @@ public class Patient {
     @Column(nullable = false)
     private String dateOfBirth;
 
-    @Column(nullable = false)
+   
     private String address;
 
-    @Column(nullable = false)
+   
     private String city;
 
-    @Column(nullable = false)
+    
     private String state;
 
-    @Column(nullable = false)
+   
     private String country;
 
     @Column(nullable = false)

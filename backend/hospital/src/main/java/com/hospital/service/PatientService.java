@@ -1,10 +1,20 @@
 package com.hospital.service;
 
-import com.hospital.dto.PatientRegistrationRequest;
-import com.hospital.dto.PatientResponse;
+import java.util.List;
+
+import com.hospital.dto.request.PatientRegistrationRequest;
+import com.hospital.dto.response.PatientResponse;
 
 public interface PatientService {
 
-     public PatientResponse  registerPatient(PatientRegistrationRequest request);
+	PatientResponse getPatientByEmail(String email);
+
+	public PatientResponse registerPatient(PatientRegistrationRequest request);
+
+	public PatientResponse updatePatient(String email, PatientResponse response);
+
+	public boolean deletePatient(String email);
+
+	List<PatientResponse> getAllPatients();
 
 }

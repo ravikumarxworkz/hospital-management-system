@@ -1,95 +1,23 @@
-/* Centering the page and styling the container */
+body {
+    background-color: #e0f7fa; /* Light cyan background */
+}
+
 .login-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: #f4f7fa;
 }
 
 .login-box {
-    background-color: white;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-    width: 400px;
-    text-align: center;
-}
-
-.logo-container {
-    margin-bottom: 20px;
+    max-width: 400px;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
-    width: 150px;
-    height: 150px;
-  
-}
-
-.login-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 30px;
-    color: #333;
-}
-
-.login-form .form-group {
-    margin-bottom: 20px;
-    text-align: left;
-}
-
-.login-form label {
-    font-size: 14px;
-    color: #555;
-}
-
-.login-form .form-control {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-top: 5px;
-}
-
-.text-danger {
-    color: red;
-    margin-bottom: 20px;
-}
-
-.login-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.login-button:hover {
-    background-color: #0056b3;
-}
-
-.links-container {
-    margin-top: 20px;
-}
-
-.links-container .link {
-    display: inline-block;
-    margin: 10px;
-    font-size: 14px;
-    color: #007bff;
-    text-decoration: none;
-}
-
-.links-container .link:hover {
-    text-decoration: underline;
-}
-
-/* For responsive design */
-@media (max-width: 768px) {
-    .login-box {
-        width: 90%;
-    }
+    width: 100px;
+    margin-bottom: 1rem;
 }

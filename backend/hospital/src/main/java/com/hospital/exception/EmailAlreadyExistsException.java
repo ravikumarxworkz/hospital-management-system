@@ -1,7 +1,12 @@
 package com.hospital.exception;
 
 public class EmailAlreadyExistsException extends RuntimeException {
-    public EmailAlreadyExistsException(String message) {
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public EmailAlreadyExistsException(String message) {
         super(message);
     }
 }

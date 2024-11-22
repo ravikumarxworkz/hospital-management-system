@@ -1,6 +1,7 @@
+
 package com.hospital.mapper;
 
-import com.hospital.dto.PatientResponse;
+import com.hospital.dto.response.PatientResponse;
 import com.hospital.entity.Patient;
 
 // File: com.example.hospitalmanagement.mapper.PatientMapper.java

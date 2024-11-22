@@ -1,4 +1,4 @@
-package com.hospital.dto;
+package com.hospital.dto.request;
 
 //File: com.example.hospitalmanagement.dto.PatientRegistrationRequest.java
 
@@ -32,16 +32,12 @@ public class PatientRegistrationRequest {
 	@NotBlank(message = "Date of birth is required")
 	private String dateOfBirth; // Use LocalDate if you want a Date picker in your front-end
 
-	@NotBlank(message = "Address is required")
 	private String address;
 
-	@NotBlank(message = "City is required")
 	private String city;
 
-	@NotBlank(message = "State is required")
 	private String state;
 
-	@NotBlank(message = "Country is required")
 	private String country;
 
 	@NotBlank(message = "Password is required")
