@@ -321,6 +321,82 @@ function ViewDoctorTable() {
             fullWidth
             margin="normal"
           />
+           <TextField
+            label="Last Name"
+            name="lastName"
+            value={currentPatient.lastName}
+            onChange={handleInputChange}
+            fullWidth
+            margin="normal"
+          />
+          <TextField
+            label="Email"
+            name="email"
+            value={currentPatient.email}
+            onChange={handleInputChange}
+            fullWidth
+            margin="normal"
+            disabled={formMode === "edit"}
+          />
+          <TextField
+            label="Phone Number"
+            name="phoneNumber"
+            value={currentPatient.phoneNumber}
+            onChange={handleInputChange}
+            fullWidth
+            margin="normal"
+          />
+          <TextField
+            label="Gender"
+            name="gender"
+            value={currentPatient.gender}
+            onChange={handleInputChange}
+            fullWidth
+            margin="normal"
+          />
+          <TextField
+            label="Date of Birth"
+            name="dateOfBirth"
+            value={currentPatient.dateOfBirth}
+            onChange={handleInputChange}
+            fullWidth
+            margin="normal"
+          />
+          <TextField
+            label="City"
+            name="city"
+            value={currentPatient.city}
+            onChange={handleInputChange}
+            fullWidth
+            margin="normal"
+          />
+          <TextField
+            label="State"
+            name="state"
+            value={currentPatient.state}
+            onChange={handleInputChange}
+            fullWidth
+            margin="normal"
+          />
+          <TextField
+            label="Country"
+            name="country"
+            value={currentPatient.country}
+            onChange={handleInputChange}
+            fullWidth
+            margin="normal"
+          />
+          {formMode === "add" && (
+            <TextField
+              label="Password"
+              name="password"
+              type="password"
+              value={currentPatient.password}
+              onChange={handleInputChange}
+              fullWidth
+              margin="normal"
+            />
+          )}
           {/* ... Other basic fields similar to patient form ... */}
 
           {/* Doctor-specific fields */}
